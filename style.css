@@ -1,54 +1,111 @@
 *{
+    /* body */
     margin: 0;
     padding: 0;
      font-family: 'Poppins', sans-serif;
 
 }
 
-#banner{
-    background: linear-gradient(rgba(0,0,0,0.5),#009688),url(images/barber3.jpg);
+#banner{ 
+     /* -id banner to target my background */ 
+    background:url(images/gif.gif);
+    /* (must use atleast two colors),sets a linear-gradient as a background-image: ; */
+    /* this property can be used to set most background properties at the same place */
+    /* the colors set will flow in a single direction eg from left to righttop to bottom depending on your choice */
     background-size: cover;
+    /* constrains the image to fit the available space */
     background-position: center;
+    /* sets the starting position of a background image */
     height:100vh ;
+    /* min-height 100vh increases the viewport height regardless of its content since the view port height is usually
+    smaller; */
 }
 .logo{
+    /* style the gif */
     width: 200px;
+    /* to specify its width */
     position: absolute;
-    top: 4%;
+    /* defines position,positioned absolutely to its first positioned parent */
+    top: 6%;
     left: 10%;
 }
+.june{
+    position: absolute;
+    top: 7px;
+    left: 20rem;
+
+}
+.const{
+    position: absolute;
+    top: 7px;
+left: 40rem;
+}
 .banner-text{
+    /* style the h1,p,button */
     text-align: center;
     color: #fff;
     padding-top: 180px;
+    /* create a padding at the top */
 
 }
 .banner-text h1{
+    /* style h1 */
     font-size: 130px;
     font-family: 'Kaushan Script', cursive;
 
+}.banner-top h1{
+    color: #009688;
+    margin-top: 0rem;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+font-size: 180px;
 }
 .banner-text p{
+    /* style the paragraph */
     font-size: 20px;
-    font-style: italic;
+    /* show large the characters displayed on a screen or printed  */
+    font-style: italic; 
+    /* styles the typed character */
+
+
+}
+.banner-btn nav ul li{
+    justify-content: space-between;
+    display: flex;
 }
 .banner-btn{
     margin: 70px auto 0;
+    /* top bottom takes 70px,0 takes left and right margin */
+    /*  used to create space around elements */
 }
 .banner-btn a{
+    /* style the button links */
     width: 150px;
     text-decoration: none;
+    /* used for element text to style it,none to remove decoration */
     display:inline-block ;
+    /* difference between this and inline is that it allows you to set width and height values. */
     margin: 0 10px;
+/* top and bottom 0,left and right 10px */
     padding: 12px 0;
+    /* top bottom,left right */
     color: #fff;
     border: .5px solid  #fff;
+    /* solid,the type,color,5px for the width */
     position: relative;
+    /* positioned relative to its normal position,cause it to be adjusted away from its normal position,
+    Setting the top, right, bottom, and left properties. */
     z-index: 1;
+    /* which element should be placed in front of, or behind, the other */
+    /* 1 so that the words appear before the background color white */
     transition: color 0.5s;
+    /* transitions allows you to change property values smoothly, over a given duration. */
+    /* for the color of the text,from white to black */
 
 }
 .banner-btn a span{
+    /* used it to put the background color and style it in a way that the text will come before the bg color */
+    /* for the link(a tag) */
     width: 0%;
     height: 100%;
     position: absolute;
@@ -56,36 +113,53 @@
     left: 0;
     background: #fff;
     z-index: -1;
+    /* the text comes before the color */
     transition: 0.5s;
 }
     
-
 .banner-btn a:hover span{
+    /* Select and style a link when you mouse over it */
     width: 100%;
 
 }
 .banner-btn a:hover{
+    /* if i hoover around it the color of the text changes from white to black */
     color: #000;
 }
 #sideNav{
+    /* styling the links,ul,li */
     width: 250px;
     height: 100vh;
+    /* viewport is usually smaller this increases view port */
     position: fixed;
+    /* stays in the same place even if the page is scrolled */
     right: -250px;
     top: 0;
     background: #009688;
+    /* color of background */
     z-index: 2;
+    /* comes after clicking the menu button  */
     transition: 0.5s;
+    /* enables you to change features */
 }
+
 nav ul li{
+    /* target the lists */
     list-style-type: none;
+    /* remove the list type */
     margin: 50px 20px;
+    /* top bottom,left right */
 }
 nav ul li a{
+    /* target the links */
     text-decoration: none;
+    /* remove the lines */
     color: #fff;
+    /* text color */
 }
 #menuBtn{
+    /* style the icon */
+    /* style the border and features around it */
     width: 50px;
     height: 50px;
     background: #009688;
@@ -94,44 +168,64 @@ nav ul li a{
     right: 30px;
     top: 20px;
     border-radius: 3px;
+    /* radius of the border */
     z-index: 3;
+    /* comes before the links */
     cursor: pointer;
-
+    /* property specifies the mouse cursor to be displayed when pointing over an element. */
+    /* The cursor is a pointer and indicates a link */
 }
 #menuBtn .bi-list{
+    /* for the icon */
 width: 22px;
 margin-top: 20px;
 color: #fff;
 
 }
+
+
 #feature{
+    /* style everything in the section */
     width: 100%;
     padding: 70px 0;
+    /* top bottom,left right */
 }
 .title-text{
+    /* p and h1 */
     text-align: center;
+    /* align it to the center */
     padding-bottom: 70px;
 }
 .title-text p{
+    /* style the paragraph */
     margin: auto;
+    /* left right */
     font-size: 20px;
     color: #009688;
     font-weight: bold;
     position: relative;
+     /* positioned relative to its normal position,cause it to be adjusted away from its normal position,
+    Setting the top, right, bottom, and left properties. */
     z-index: 1;
     display: inline-block;
 
 }
 .title-text p::after{
+    /* selector inserts something after the content of each selected element */
     content: '';
+    /* property is used with the ::before and ::after pseudo-elements, to insert generated content. */
     width: 50px;
     height: 35px;
     background: linear-gradient(#019587,#fff);
+    /* color after the text */
     position: absolute;
+    /* * /defines position,positioned absolutely to its first positioned parent */ 
     top: -20px;
+    /* top creates extra margin and margin-bottom removes it */
     left: 0;
     z-index: -1;
     transform: rotate(10deg);
+    /* property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements. */
     border-top-left-radius: 35px;
     border-bottom-right-radius: 35px;
 }
@@ -141,26 +235,34 @@ color: #fff;
 
 }
 .feature-box{
+    /* style,h1,p,icons */
     width: 80%;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    /* property specifies whether the flexible items should wrap or not. */
     align-items: center;
     text-align: center;
+    /* property specifies the horizontal alignment of text in an element. */
 }
 .features{
+    /* specifies the initial length of a flexible item */
     flex-basis: 50%;
 }
 .features-img{
     flex-basis: 50%;
     margin: auto;
-    
+    /* left right */
+
+
+  
     
 }
 .features-img img{
-    width: 40%;
+    /* images */
+    width: 80%;
     border-radius: 10px;
-
+transform: skewX(-20deg);
 
 }
 .features h1{
@@ -179,6 +281,7 @@ width: 50px;
 height: 50px;
 font-size: 30px;
 line-height: 50px;
+/* property specifies the height of a line. */
 border-radius: 8px;
 color: #009688;
 border: 1px solid #009688;
@@ -186,6 +289,7 @@ border: 1px solid #009688;
 .feature-text p{
 padding: 0 20px;
 text-align: initial;
+/* Sets this property to its default valu */
 }
 #services{
     width: 100%;
@@ -201,6 +305,7 @@ text-align: initial;
 }
 .single-service{
     flex-basis: 48%;
+    /* specifies the initial length of a flexible item */
     text-align: center;
     border-radius: 7px;
     margin-bottom: 20px;
@@ -232,6 +337,7 @@ text-align: initial;
     bottom: 0%;
     left: 50%;
     opacity: 0;
+/* is defined as the quality of not letting light pass through */
     transform: translateX(-50%);
     transition: 1s;
 }
@@ -365,50 +471,3 @@ text-align: center;
     margin-top: 20px;
     
 }
-.row{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5%;
-}
-
-.campus-col{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.campus-col img{
-    width: 100%;
-    display: block;   
-}
-.layer{
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-}
-.layer:hover{
-background-color: rgba(226,0,0,0.7);
-}
-.layer h3{
-    width: 100%;
-    font-weight: 500;
-    color: #fff;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-}
-.layer:hover h3{
-    bottom: 49%;
-    opacity: 1;
-}
-
-

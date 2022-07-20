@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <!-- links -->
+    <link rel="stylesheet" href="style.css">  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style3.css"/>  
+
+     
+</section>
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li id="li"><a href="index.html">HOME</a></li> 
+            <li id="li"><a href="features.html">FEATURES</a></li> 
+            <li id="li"><a href="services.html">SERVICES</a></li> 
+            <li id="li"><a href="testimonials.html">TESTIMONIALS</a></li> 
+            <li id="li"><a href="meet us.html">MEET US</a></li>
+        </ul>
+    </nav>
+</div>
+</section>
+<div id="menuBtn">
+    <i class="bi bi-list" id="menu"></i>  
+</div>
+
+         
+<!-- javascript part -->
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px";
+
+menuBtn.onclick = function(){
+if(sideNav.style.right == "-250px"){
+sideNav.style.right = "0"
+}
+else {
+    sideNav.style.right = "-250px"; 
+}
+}
+
+</script>
+<!-- about us section -->
+<section id="footer">
+    <img src="images/footer-img.jpg" class="footer-img">
+    <div class="title-text">
+        <p>Contact Us</p>
+        <h1>Visit Our Shop Today</h1><div class="container">
+            <div class="ring"></div>     
+            <div class="ring"></div>     
+            <div class="ring"></div>
+    </div> 
+
+    </div>
+    <div class="footer-row">
+    <div class="footer-left">
+        <h1>Opening Hours</h1>
+        <p>Monday-Friday - 8am to 8pm<i class="bi bi-clock-history"></i></p>
+        <p>Sarturday and Sunday - 7 am to 7pm<i class="bi bi-clock-history"></i></p>
+    </div>
+    
+
+   <div class="footer-right">
+    <h1>Get in touch</h1>
+    <p>456th StreetTom Mboya<i class="bi bi-geo-alt-fill"></i></p>
+    <p>@fellow04salon<i class="bi bi-twitter"></i></p>
+    <p>+254 78777
+        4285<i class="bi bi-telephone-plus-fill"></i></p>
+   </div>
+   </div>
+   <div class="social-links">
+    <a href="https://twitter.com/sheilaEsther15">twitter</a><i class="bi bi-twitter"></i>
+    <a href="https://www.facebook.com/profile.php?id=100077229590583">facebook</a><i class="bi bi-facebook"></i>
+         <a href="https://www.instagram.com/kisumian_vibe/">instagram</a><i class="bi bi-instagram"></i>
+    <a href="https://www.youtube.com/channel/UCK3gx4YzXKMuUFZ5q7mjlXg/featured">youtube</a><i class="bi bi-youtube"></i>
+
+
+    <p>Made with<i class="bi bi-arrow-through-heart"></i> by Esther Wanyoike</p>
+  </div>
+</section>
+
