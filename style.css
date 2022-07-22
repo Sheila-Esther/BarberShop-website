@@ -5,10 +5,19 @@
      font-family: 'Poppins', sans-serif;
 
 }
-
+.hero{
+    height: 100vh;
+    position: relative;
+    padding: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    z-index: 1;
+}
 #banner{ 
      /* -id banner to target my background */ 
-    background:url(images/gif.gif);
+    background:url(images/beauty.mp4);
     /* (must use atleast two colors),sets a linear-gradient as a background-image: ; */
     /* this property can be used to set most background properties at the same place */
     /* the colors set will flow in a single direction eg from left to righttop to bottom depending on your choice */
@@ -19,6 +28,17 @@
     height:100vh ;
     /* min-height 100vh increases the viewport height regardless of its content since the view port height is usually
     smaller; */
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100vh;
+    left: 5rem;
+    right: 0rem;
+    background-position: center;
+    background-size: cover;
 }
 .logo{
     /* style the gif */
@@ -31,19 +51,19 @@
 }
 .june{
     position: absolute;
-    top: 7px;
-    left: 20rem;
+    top: 3px;
+    left: 30rem;
 
 }
 .const{
     position: absolute;
-    top: 7px;
-left: 40rem;
+    top: 3px;
+left: 8rem;
 }
 .banner-text{
     /* style the h1,p,button */
     text-align: center;
-    color: #fff;
+    color: #009688;
     padding-top: 180px;
     /* create a padding at the top */
 
@@ -67,7 +87,6 @@ font-size: 180px;
     font-style: italic; 
     /* styles the typed character */
 
-
 }
 .banner-btn nav ul li{
     justify-content: space-between;
@@ -89,8 +108,8 @@ font-size: 180px;
 /* top and bottom 0,left and right 10px */
     padding: 12px 0;
     /* top bottom,left right */
-    color: #fff;
-    border: .5px solid  #fff;
+    color: #009688;
+    border: .5px solid  #009688;
     /* solid,the type,color,5px for the width */
     position: relative;
     /* positioned relative to its normal position,cause it to be adjusted away from its normal position,
